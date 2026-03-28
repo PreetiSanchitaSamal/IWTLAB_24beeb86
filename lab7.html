@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>lab7</title>
+</head>
+<body bgcolor="white" text="black">
+<img src="pexels-gustavo-fring-4173251.jpg" align="left" height="700" width="700"></img>
+<h1>Doctor Appointment Form</h1>
+<hr color="red">
+<table padding="10">
+<tr>
+<th>Appointment<br>date</th> <td colspan="4"><input type="text" placeholder="dd-mm-yyyy"></td>
+</tr>
+    <tr>
+        <th>Appointment<br>time</th> <td><select><option value="--:--">--:--</option><option value="8:30-9:00am">8:30-9:00am</option><option value="9:30-10:00am">9:30-10:00am</option></select></td>
+    </tr>
+    <tr>
+        <th>name</th><td><input type="text" placeholder="first"><input type="text" placeholder="last"></td>
+    </tr>
+    <tr>
+        <th>gender</th><td>male<input type="radio" name="gender">female<input type="radio" name="gender"></td>
+    </tr>
+    <tr>
+        <th>phone</th><td><input type="text" placeholder="####"></td>
+    </tr>
+    <tr>
+        <th>address</th> <td><input type="text" placeholder="city"><input type="text" placeholder="state"></td>
+    </tr>
+    <tr>
+        <th>query</th><td><input type="text"  rows="10" cols="60"></td>
+    </tr>
+    <tr>
+        <th>Appointment type</th><th colspan="4">select which appointment type(s) you require</th>
+    </tr>
+    <tr align="center">
+        <th colspan="4"><input type="checkbox">cervix checkup<br><input type="checkbox">heart checkup<br><input type="checkbox">eye check-up<br><input type="checkbox">hearing text</th>
+    </tr>
+    <tr align="center">
+        <td colspan="2"><input type="button" value="send"></td>
+    </tr>
+</table>
+</body>
+</html>
