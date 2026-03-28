@@ -1,0 +1,256 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top right, #1b1b1b, #000);
+            color: #eaeaea;
+            overflow-x: hidden
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            letter-spacing: 2px
+        }
+
+        .logo span {
+            color: #d4af37
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #bbb;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 1px
+        }
+
+        nav a:hover {
+            color: #d4af37
+        }
+
+        .nav-buttons button {
+            margin-left: 10px
+        }
+
+        button {
+            padding: 12px 22px;
+            border-radius: 0;
+            cursor: pointer;
+            font-size: 13px;
+            letter-spacing: .5px;
+            transition: all .3s ease
+        }
+
+        .filled {
+            background: linear-gradient(135deg, #d4af37, #b8860b);
+            color: #000;
+            border: none
+        }
+
+        .outline {
+            background: transparent;
+            color: #d4af37;
+            border: 1px solid #d4af37
+        }
+
+        button:hover {
+            transform: translateY(-2px)
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            gap: 50px;
+            padding: 80px 60px
+        }
+
+        .hero-left .badge {
+            color: #9f9f9f;
+            padding: 6px 14px;
+            margin-bottom: 25px;
+            position: relative;
+            background-color: #4e4d4d;
+            width: 40%;
+            height: 40px;
+            margin-top: 15px;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .hero-left .badge::before {
+            content: "●";
+            color: #2ecc71;
+            margin-right: 6px
+        }
+
+        .hero-left h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 56px;
+            line-height: 1.2;
+            margin-bottom: 25px
+        }
+
+        .hero-left h1 span {
+            color: #d4af37
+        }
+
+        .hero-left p {
+            color: #aaa;
+            max-width: 480px;
+            line-height: 1.6;
+            margin-bottom: 30px
+        }
+
+        .hero-buttons button {
+            margin-right: 15px
+        }
+
+        .stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 50px
+        }
+
+        .stats h3 {
+            color: #d4af37;
+            font-size: 22px;
+            font-family: 'Playfair Display', serif
+        }
+
+        .stats span {
+            font-size: 12px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px
+        }
+.hero-right {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: rgba(43, 43, 43, .244);
+            padding: 20px;
+            position: relative
+        }
+
+        .hero-right::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background: radial-gradient(ellipse at center, rgba(184, 134, 11, .8) 0%, rgba(184, 134, 11, 0) 70%)
+        }
+
+        .price-card {
+            background: #111;
+            padding: 22px;
+            border: 1px solid #1f1f1f;
+            transition: all .3s ease
+        }
+
+        .price-card-new {
+            padding: 22px;
+        }
+
+        .price-card-new h2 {
+            margin: 20px;
+            font-family: 'Playfair Display', serif;
+            font-size: 34px;
+        }
+
+        .live-div {
+            display: flex;
+            justify-content: space-between;
+            color: #9f9f9f;
+        }
+
+        .live::before {
+            content: "●";
+            color: #2ecc71;
+            margin-right: 6px
+        }
+
+        .dollar {
+            color: #b8860b;
+        }
+
+        .price-card:hover {
+            border-color: #d4af37;
+            transform: translateY(-4px)
+        }
+
+        .price-card span {
+            font-size: 12px;
+            color: #888
+        }
+
+        .price-card h2 {
+            font-size: 36px;
+            margin-top: 10px;
+            font-family: 'Playfair Display', serif
+        }
+
+        .price-card h3 {
+            font-size: 24px;
+            margin-top: 8px;
+            font-family: 'Playfair Display', serif
+        }
+
+        .num {
+            background-color: #4e4d4d;
+            width: 40%;
+            height: 40px;
+            margin-top: 15px;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 15px;
+            color: #2ecc71
+        }
+
+        .price-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px
+        }
+
+        .positive {
+            color: #2ecc71;
+            font-size: 13px;
+            margin-top: 5px
+        }
+
+        .negative {
+            color: #e74c3c;
+            font-size: 13px;
+            margin-top: 5px
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(62, 62, 62, .5), transparent);
+            margin: 20px 0
+        }
