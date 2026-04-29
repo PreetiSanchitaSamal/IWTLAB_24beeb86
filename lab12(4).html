@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>q4</title>
+<script>
+function increment()
+{
+let val=parseInt(document.getElementById("count").value);
+document.getElementById("count").value = val + 1;
+}
+function decrement()
+{
+let val=parseInt(document.getElementById("count").value);
+if(val>0)
+{
+document.getElementById("count").value = val - 1;
+}
+}
+</script>
+<body>
+<input type="text" id="count" value="0"></input>
+<button onclick="increment()">+</button>
+<button onclick="decrement()">-</button>
+</body>
+</html>

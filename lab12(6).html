@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>q6</title>
+<script>
+function currency() {
+  const amount = parseFloat(document.getElementById("amount").value);
+  const fromcurrency = document.getElementById("fromcurrency").value;
+  const tocurrency = document.getElementById("tocurrency").value;
+  const result = document.getElementById("result");
+
+  if (isNaN(amount) || amount <= 0) {
+    result.innerText = "Enter a valid amount";
+    return;
+  }
+  const convert = {
+    USD: { USD: 1, EUR: 0.93, INR: 82.74 },
+    EUR: { USD: 1.08, EUR: 1, INR: 89.06 },
+    INR: { USD: 0.012, EUR: 0.011, INR: 1 }
+  };
+
+  if (convert[fromcurrency] && convert[fromcurrency][tocurrency]) {
+    const am = amount * convert[fromcurrency][tocurrency];
+    result.innerText = `${amount} ${fromcurrency} = ${am.toFixed(2)} ${tocurrency}`;
+  } else {
+    result.innerText = "Conversion rate not available.";
+  }
+}
+</script>
+</head>
+<body bgcolor="white" text="black">
+<h1>Currency Converter</h1>
+<input type="number" id="amount" placeholder="Enter amount">
+<select id="fromcurrency">
+  <option value="USD">USD</option>
+  <option value="EUR">EUR</option>
+  <option value="INR">INR</option>
+</select>
+<select id="tocurrency">
+  <option value="USD">USD</option>
+  <option value="EUR">EUR</option>
+  <option value="INR">INR</option>
+</select>
+<button onclick="currency()">Convert</button>
+<p id="result"></p>
+</body>
+</html>

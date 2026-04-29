@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>q1</title>
+<script>
+function change() {
+  const heading = document.getElementById("heading");
+  if (heading.innerText === "hello world") {
+    heading.innerText = "welcome dom manipulation";
+  } else {
+    heading.innerText = "hello world";
+  }
+}
+</script>
+</head>
+<body bgcolor="white" text="black">
+<h2 id="heading">hello world</h2>
+<button onclick="change()">Change Heading</button>
+</body>
+</html>

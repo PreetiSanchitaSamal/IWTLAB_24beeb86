@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>q2</title>
+<script>
+function paragraph()
+{
+const para=document.getElementById("para");
+const button=document.getElementById("p");
+if(para.style.display==="none")
+{
+para.style.display="hide";
+button.innerText="block";
+}
+else{
+para.style.display="none";
+button.innerText="show";
+}
+}
+</script>
+<body>
+<p1 id="para">welcome to hogwats choose your houses</p1>
+<button onclick="paragraph()" id="p">paragraph</button>
+</body>
+</html>

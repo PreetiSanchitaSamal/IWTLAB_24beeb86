@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>q3</title>
+<style>
+#col{
+width:1000px;
+height:800px;
+}
+</style>
+<script>
+function changecolor(color)
+{
+if(confirm("you want to change the color?"))
+{
+document.getElementById("col").style.background=color;
+background=color;
+}
+}
+</script>
+<body>
+<button onclick="changecolor('red')">red</button>
+<button onclick="changecolor('green')">green</button>
+<button onclick="changecolor('blue')">blue</button>
+<div id="col">
+</div>
+</div>
+</body>
+</html>

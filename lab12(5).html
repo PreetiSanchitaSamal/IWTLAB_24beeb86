@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>q5</title>
+<script>
+function checkprime()
+{
+let num=parseInt(document.getElementById("prime").value);
+let result=document.getElementById("result");
+if(isNaN(num)||num<2){
+result.innerText="not prime";
+return;
+}
+for(let i=2;i<=Math.sqrt(num);i++)
+{
+if(num%i===0)
+{
+result.innerText="it is not prime";
+return;
+}
+}
+result.innerText="it is prime";
+}
+</script>
+<body>
+<input type="number" id="prime" placeholder="enter a number">
+<button onclick="checkprime()">prime</button>
+<div id="result"></div>
+</body>
+</html>
