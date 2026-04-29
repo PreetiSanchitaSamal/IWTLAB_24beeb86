@@ -1,0 +1,33 @@
+<html>
+<head>
+<script>
+var a=new Array(10,20,30,40);
+var max=a[0];
+var smal=a[0];
+var sum=0;
+var avg;
+for(let i=0;i<a.length;i++)
+{
+if(a[i]>max)
+{
+max=a[i];
+}
+else if(a[i]<smal)
+{
+smal=a[i];
+}
+}
+document.write("the largest="+max+"<br>");
+document.write("the smallest="+smal+"<br>");
+for(let i=0;i<a.length;i++)
+{
+sum+=a[i];
+}
+document.write("sum="+sum+"<br>");
+avg=(sum/a.length);
+document.write("average="+avg+"<br>");
+</script>
+</head>
+<body bgcolor="pink" text="black">
+</body>
+</html>

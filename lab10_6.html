@@ -1,0 +1,15 @@
+<html>
+<head>
+<script>
+var a=new Array(10,10,10,20,20,20,30,30,30,40,40,40);
+var unique = [];
+for(var i=0;i<a.length;i++){
+  if(unique.indexOf(a[i]) === -1){
+    unique.push(a[i]);
+  }
+}
+document.write("Array without duplicates: " + unique);
+</script>
+</head>
+<body bgcolor="pink" text="black"></body>
+</html>

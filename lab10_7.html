@@ -1,0 +1,20 @@
+<html>
+<head>
+<script>
+var arr = [10,10,20,20,30,30,40,40,50,50];
+var counts = {};
+for(var i=0;i<arr.length;i++){
+  var num = arr[i];
+  if(counts[num]){
+    counts[num]++;
+  } else {
+    counts[num] = 1;
+  }
+}
+for(var key in counts){
+  document.write(key + " occurs " + counts[key] + " times<br>");
+}
+</script>
+</head>
+<body bgcolor="lightpink" text="black"></body>
+</html>

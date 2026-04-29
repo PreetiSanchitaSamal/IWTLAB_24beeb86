@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+function Fibonacci(n){
+  if(n<=0) return [];
+  if(n===1) return [0];
+  var fib=[0,1];
+  for(var i=2;i<n;i++){
+    fib.push(fib[i-1]+fib[i-2]);
+  }
+  return fib;
+}
+let n=parseInt(prompt("enter a number"));
+document.write("Fibonacci sequence: " + Fibonacci(n));
+</script>
+</head>
+<body bgcolor="pink" text="black"></body>
+</html>

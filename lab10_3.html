@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> pallindrom</title>
+</head>
+<body>
+<script>
+let n=parseInt(prompt("enter a number"));
+var digit=0;
+var rev=0;
+var org=n;
+while(n>0)
+{
+digit=n%10;
+rev=rev*10+digit;
+n=Math.floor(n/10);
+}
+if(org===rev)
+{
+document.write("it is palindrome"+rev+"<br>");
+}
+else{
+document.write("it is not a palindrome"+rev+"<br>");
+}
+</script>
+</body>
+</html>
