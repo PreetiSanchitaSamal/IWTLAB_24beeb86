@@ -1,0 +1,10 @@
+#box{
+border:inset;
+}
+.filled{
+	background:green;
+	padding:10px;
+	padding-bottom:5px;
+	padding-left:80px;
+	padding-right:80px;
+}
